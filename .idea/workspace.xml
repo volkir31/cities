@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de8388e6-1138-44be-a56c-c60e115b0641" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cities.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +30,34 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cities" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.parser" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -45,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585931132905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="create parser">
+      <created>1585931280430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585931280430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -58,5 +96,25 @@
       <screen x="0" y="30" width="1536" height="834" />
     </state>
     <state x="424" y="41" key="CommitChangelistDialog2/0.30.1536.834@0.30.1536.834" timestamp="1585931278716" />
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1585942014659">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.30.1536.834@0.30.1536.834" timestamp="1585942014659" />
+    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1585942014658">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.center/0.30.1536.834@0.30.1536.834" timestamp="1585942014658" />
+    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1585942014657">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.left/0.30.1536.834@0.30.1536.834" timestamp="1585942014657" />
+    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1585942014658">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.right/0.30.1536.834@0.30.1536.834" timestamp="1585942014658" />
+    <state x="431" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1585939668920">
+      <screen x="0" y="30" width="1536" height="834" />
+    </state>
+    <state x="431" y="186" width="672" height="678" key="search.everywhere.popup/0.30.1536.834@0.30.1536.834" timestamp="1585939668920" />
   </component>
 </project>
