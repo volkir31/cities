@@ -1,10 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 
-URL = 'http://www.1000mest.ru/cityYa'
+URL = 'http://otzyvoteli.ru/goroda'
 HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 \
-(KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36 OPR/67.0.3575.105',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36\
+     (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36 OPR/67.0.3575.105',
     'Accept': '*/*'
 }
 
@@ -35,7 +35,7 @@ def parse():
     if html.status_code == 200:
         cities = get_content(html.text)
         for i in range(0, len(cities)):
-            save_file(str(cities[i].values())+'\n', 'cities.txt')
+            save_file(str(cities[i].values())+'\n', 'cities1.txt')
     else:
         print('Error')
 

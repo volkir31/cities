@@ -8,6 +8,13 @@ def player_turn():
         player_turn()
     else:
         city = city.replace(' ', '')
+        with open('cities.txt', 'r', encoding='utf-8') as file:
+            for line in file:
+                if line.upper() != city.upper():
+                    print('Такого города нет, пожалуйста, введите другой город')
+                    player_turn()
+                else:
+                    continue
         if len(cities) == 0:
             cities.append(city.upper())
             print(city.title())
