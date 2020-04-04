@@ -8,25 +8,34 @@ def player_turn():
         player_turn()
     else:
         city = city.replace(' ', '')
-        with open('cities.txt', 'r', encoding='utf-8') as file:
-            for line in file:
-                if line.upper() != city.upper():
-                    print('Такого города нет, пожалуйста, введите другой город')
-                    player_turn()
-                else:
-                    continue
-        if len(cities) == 0:
-            cities.append(city.upper())
-            print(city.title())
+        if check_validation_city(city) == 'false':
+            print('Введенное слово не является городом(')
+            player_turn()
         else:
-            if cities[-1][-1] == 'Ь' or cities[-1][-1] == 'Ы' or cities[-1][-1] == 'Ё' or cities[-1][-1] == 'Ъ':
-                if city[0].upper() != cities[-1][-2]:
-                    print(f'Вы ввели город, начинающийся на букву {city[0]}, а нужно - на букву {cities[-1][-2]}')
-                    player_turn()
+            if len(cities) == 0:
+                cities.append(city.upper())
+                print(city.title())
             else:
-                if city[0].upper() != cities[-1][-1]:
-                    print(f'Вы ввели город, начинающийся на букву {city[0]}, а нужно - на букву {cities[-1][-1]}')
-                    player_turn()
+                if cities[-1][-1] == 'Ь' or cities[-1][-1] == 'Ы' or cities[-1][-1] == 'Ё' or cities[-1][-1] == 'Ъ':
+                    if city[0].upper() != cities[-1][-2]:
+                        print(f'Вы ввели город, начинающийся на букву {city[0]}, а нужно - на букву {cities[-1][-2]}')
+                        player_turn()
+                else:
+                    if city[0].upper() != cities[-1][-1]:
+                        print(f'Вы ввели город, начинающийся на букву {city[0]}, а нужно - на букву {cities[-1][-1]}')
+                        player_turn()
+
+
+def check_validation_city(city):
+    with open('cities.txt', 'r', encoding='utf-8') as file:
+        for line in file:
+            line = line.replace('\n', '')
+            if line.upper() != city.upper():
+                validation = 'false'
+            else:
+                validation = 'true'
+                break
+        return validation
 
 
 def bot_turn(valid='true'):
