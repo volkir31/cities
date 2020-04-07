@@ -2,13 +2,16 @@ import time
 
 
 def timer():
+    start = time.time()
     while True:
         limit_time = 10
-        start = time.time()
         time.sleep(1)
-        if time.time() - start >= limit_time:
+        if time.time() - start >= limit_time - 1:
             print('Время вышло(')
-            return False
+            valid_time = False
+            break
         else:
             print(int(limit_time - (time.time() - start)))
-            return True
+            valid_time = True
+    return valid_time
+
